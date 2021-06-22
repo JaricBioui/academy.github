@@ -19,57 +19,44 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">    
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- Jquery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="navbar-header">
-        <div>
-            <nav class="navbar navbar-fixed-top">
-                <div class="container-fluid">
-                    <div class="site-nav-wrapper">
-                        <div class="navbar-header">
-                            <!-- Mobile Menu Open Button -->
-                            <span id="mobile-nav-open-btn">&#9776;</span>
-                            <!-- Logo -->
-                            <a class="navbar-brand smooth-scroll" href="#home">
-                                <img src="img/logo.mp4" alt="logo">
-                            </a>
-                        </div>
+<header>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a class="navbar-brand smooth-scroll" href="#home">
+            <!-- <video height="50"  class="animation" src="img/logo.mp4" alt="logo" autoplay muted no-contols loop></video>  -->
+        </a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#welkom">Welkom</a></li>
+                    <li><a href="#galerij">Galerij</a></li>
+                    <li><a href="#typo_animatie">Typo animatie</a></li>
+                    <li><a href="#video">Video</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
 
-                        <!-- Main Menu -->
-                        <div class="container">
-                            <div class="collapse navbar-collapse">
-                                <ul class="nav navbar-nav pull-right">
-                                    <li><a class="smooth-scroll" href="#welkom">Welkom</a></li>
-                                    <li><a class="smooth-scroll" href="#logo">Logo</a></li>
-                                    <li><a class="smooth-scroll" href="#galerij">Galerij</a></li>
-                                    <li><a class="smooth-scroll" href="#Typo_animatie">Typo Animatie</a></li>
-                                    <li><a class="smooth-scroll" href="#Video">Video</a></li>
-                                    <li><a class="smooth-scroll" href="#contact">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Mobile Menu -->
-                        <div id="mobile-nav">
-                            <!-- Mobile Menu Close Button -->
-                            <span id="mobile-nav-close-btn">&times;</span>
-                            <div id="mobile-nav-content">
-                                <ul class="nav">
-                                    <li><a class="smooth-scroll" href="#welkom">Welkom</a></li>
-                                    <li><a class="smooth-scroll" href="#logo">Logo</a></li>
-                                    <li><a class="smooth-scroll" href="#portfolio">Galerij</a></li>
-                                    <li><a class="smooth-scroll" href="#Typo_animatie">Typo Animatie</a></li>
-                                    <li><a class="smooth-scroll" href="#Video">Video</a></li>
-                                    <li><a class="smooth-scroll" href="#contact">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-    </header>
+    <section class="home">
+    </section>
+
+</header>
     <!-- Header Ends -->
     </div>
     </header>
@@ -77,11 +64,7 @@
         <div id="jumbo"></div>
         <h2 id="welkom">Welkom</h2>
         <p>Als voorwerp voor mijn GIP heb ik een bal gekozen, het is één van mijn grote passies </p>
-        <h2>Logo</h2>
-        <section id="logo">
-            <p id="mijn_logo">Mijn logo heb ik verkregen na een lange zoektocht. Dit logo past bij mijn visie en stijl. Ik hou van eenvoudige maar toch Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque nesciunt nulla itaque perspiciatis sapiente quod veniam incidunt consectetur tempora est illum ratione voluptates fugiat delectus quam, iusto fugit hic. </p>
-            <img class="logo"  src="img/logo.jpg" alt="">
-        </section>
+       
         <h2>Galerij</h2>
         <p>Voor mijn fotogalerij heb ik gekozen om onderdelen van de fiets in beeld te brengen zonder de fiets in zijn geheel te tonen. De onderdelen die een fiets vormen zijn elk opzich eenvoudig maar samen vormen ze een geheel dat al decenia lang het leven van de mensen veel eenvoudiger maakt. lorem </p>
         <section id="galerij" class="gallerij" class="container">
@@ -168,26 +151,56 @@
                 </div>
             </article>
             <article class="vector">
-                <h3>Vector</h3>
+                <h3>Vector</h3>                
                 <div class="item col-sm-6 col-md-4 mb-3">
-                    <a href="img/" class="fancybox" data-fancybox="gallery1">
-                        <img src="img/" width="100%" height="100%">
+                    <a href="img/goal.jpg" class="fancybox" data-fancybox="gallery1">
+                        <img src="img/goal.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="img/keeper.jpg" class="fancybox" data-fancybox="gallery1">
+                       <img src="img/keeper.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="img/schoen.jpg" class="fancybox" data-fancybox="gallery1">
+                        <img src="img/schoen.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="img/voetbalveld.jpg" class="fancybox" data-fancybox="gallery1">
+                        <img src="img/voetbalveld.jpg" width="100%" height="100%">
+                    </a>
+                </div>
+                <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="img/bal.jpg" class="fancybox" data-fancybox="gallery1">
+                        <img src="img/bal.jpg" width="100%" height="100%">
                     </a>
                 </div>
             </article>
         </section>
-        <<!-- h2 id="typo_animatie">Typo animatie</h2>
-            <h3> </h3>
-            <p></p>
+
+        <h2 >Typo animatie</h2>
             <video src="img/typo_4 kopie.mp4" controls=""></video>
-            <h2 id="video" class="video">Video</h2>
-            <video src="img/GIP_video.mp4" controls=""></video> -->
+        <h2  class="video">Video</h2>
+            <video id="video" src="img/gip_video_def.mp4" controls="no-contols"></video>
+            
     </main>
-    <footer>
+     <footer>
         <h2 id="contact1" class="contact">Contact</h2>
         <div id="contact">
         </div>
-    </footer>
+    </footer> 
 </body>
+
+  <script>$(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
 
 </html>
